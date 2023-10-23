@@ -1,0 +1,241 @@
+<html>
+<head>    
+    <title>Book My Show</title>
+        <link rel="stylesheet" type="text/css" href="/static/myStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/jsFile.js"></script>
+
+        
+</head>
+<body>
+
+    <div>
+            <ul class="Navbar">
+                <li class="logo"><a id="logoText" href="/home/{{user}}">Book<span class="logoColr2">My</span>Movie </a></li>
+                <li class="logo"><input type="text" id="search" placeholder="Search for Movies and Events"></li>
+                <li><a href="/logout">LOG OUT</a></li> 
+                <li><a href="/contact/{{user}}">CONTACT</a> </li>
+                <li><a href="/about/{{user}}">ABOUT US</a> </li>
+                <li><a href="/home/{{user}}" class="active">HOME</a> 
+            </ul>
+    </div>
+
+    <div>
+        <ul id="secondaryNavbar">
+            <li class="secondaryNavbar"><a id="logoText" href="/movies/{{user}}">Movies</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="/events/{{user}}">Events</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="/food/{{user}}">Food & Drink</a></li>
+        </ul>
+    </div>
+
+<br>
+<h2 class="MainHead">RECOMMENDED MOVIES</h2>
+<!-- <marquee onMouseover="stop()" onMouseout="start()" Scrollamount=20> -->
+<table id="moviesTable">
+    <tr class="moviesTr">
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS8xMCAgMzkuOEsgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00362090-heamezcsbr-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICA2MDZLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00330424-mccryrbvyf-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzkuNUsgTGlrZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00300918-qbmwgnnymw-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MS4zTSBMaWtlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00351731-byaxmhagtr-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS40LzEwICAzMy45SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00370942-mpbjvmcmuh-portrait.jpg" width="100%"></a>
+        </td> 
+    </tr>
+
+    <tr>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Mission Raniganj</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Jawan</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Ganapath - A Hero Is Born</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Leo</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Mad (2023)</a>
+        </td>
+        <br>
+    </tr>
+
+</table>
+</marquee>
+
+
+
+<!-- <marquee onMouseover="stop()" onMouseout="start()" Scrollamount=20> -->
+    <table id="moviesTable">
+        <tr class="moviesTr">
+            <td class="moviesTd">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICAxLjNLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00366694-dpgllyrxdj-portrait.jpg" width="100%"></a>
+            </td>
+            <td class="moviesTd">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny4xLzEwICA1OEsgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00350845-nxeptllcsg-portrait.jpg" width="100%"></a>
+            </td>
+            <td class="moviesTd">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-NS43LzEwICAyMEsgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00366905-ccgsqxzykn-portrait.jpg" width="100%"></a>
+            </td>
+            <td class="moviesTd">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICAxLjFLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00371072-jwvqhsrjna-portrait.jpg" width="100%"></a>
+            </td>
+            <td class="moviesTd">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny44LzEwICAyLjJLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00321711-fuzrzffejf-portrait.jpg" width="100%"></a>
+            </td>
+            
+            
+            
+        </tr>
+    
+        <tr>
+            <td class="moviesTdText">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList">Paw Patrol: The Mighty Movie</a>
+            </td>
+            <td class="moviesTdText">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList">Fukrey 3</a>
+            </td>
+            <td class="moviesTdText">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList">Thank You For Coming</a>
+            </td>
+            <td class="moviesTdText">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList">Dhak Dhak</a>
+            </td>
+            <td class="moviesTdText">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList">Raththam</a>
+            </td>
+            <br>
+            <!-- <td class="moviesTdText">
+                <a href="/bookshow/{{user}}
+" class="moviesLinkList">Paw Patrol: The Mighty Movie</a>
+            </td> -->
+        </tr>
+    
+    </table>
+    </marquee>
+
+
+
+
+
+<br>
+
+<h2 class="MainHead">LIVE EVENTS</h2>
+<!-- <marquee onMouseover="stop()" onMouseout="start()" Scrollamount=10 > -->
+<table id="moviesTable">
+    <tr class="moviesTr">
+        
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00370685-hhkgkgagzw-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA0IE5vdg%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00369364-nazpghxksg-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367968-vhcvtcbxdj-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAxNyBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00371562-admjbpemfh-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAzIERlYw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00369835-zllmrywutj-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyMCBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00145294-vhpyafguac-portrait.jpg" width="100%"></a>
+        </td>
+    </tr>
+
+    <tr>
+        
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Vijay Yadav & Friends: A Standup Comedy Show</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">"Heeriye" India Tour - Jasleen Royal</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Kisi Ko Batana Mat By Anubhav Singh Bassi</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Shri Ram</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">KING New Life India Tour By TI LIVE</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Jo Bolta Hai Wohi Hota Hai feat Harsh Gujral</a>
+        </td>
+    </tr>
+
+</table>
+</marquee>
+<br>
+<br>
+
+<table id="foodTable">
+    
+
+    <tr>
+        <td class="tableTd">
+            <img src="https://i.pinimg.com/736x/ba/2e/e1/ba2ee1410e6bf96b20f825351af8ff28.jpg" width="100%" >
+        </td>
+        <td class="tableTd">
+            
+            <p class="mainPhototext"> Celebrate Navratri with discouted movie tickets, including IMAX, D-BOX, UltraAVX, and more*</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableTd">
+            
+            <p class="mainPhototext">Your Cineplex Favourites are Available for Delivery and Curbside Pick-Up!</p>
+        </td>
+        <td class="tableTd">
+            <img src="https://th.bing.com/th/id/OIP.CnFINMnk0EAP5WvlVN7vvQHaHa?pid=ImgDet&rs=1" width="60%" height="70%" style=" margin-left:30%">
+        </td>
+    </tr>
+
+   
+</table> 
+
+<div style="background-color:aliceblue; padding-left: 1%;">
+    <a href="/home/{{user}}" style="color: grey; text-decoration: none ;">Home</a>
+</div>
+
+
+
+<!--footer-->
+
+<div class="footer">
+    <table>
+      <tr>
+        <th><a href="/home/{{user}}" class="footerLinks">Home</a></th>
+        <th><a href="#search" class="footerLinks">Search</a></th>
+        <th><a href="/about/{{user}}" class="footerLinks">About Us</a></th>
+      </tr>
+    </table>
+  </div>
+
+
+
+</body>
+</html>

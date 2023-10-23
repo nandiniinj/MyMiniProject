@@ -1,0 +1,44 @@
+<html>
+<head>    
+    <title>Book My Show</title>
+        <link rel="stylesheet" type="text/css" href="/static/myStyle.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jsFile.js"></script>
+        
+</head>
+<body>
+
+    <div>
+        <ul class="Navbar">
+            <li class="logo"><a id="logoText" href="/home/{{user}}">Book<span class="logoColr2">My</span>Movie </a></li>
+            <li><a href="/logout">LOG OUT</a></li> 
+            <li><a href="/contact/{{user}}">CONTACT</a> </li>
+            <li><a href="/about/{{user}}">ABOUT US</a> </li>
+            <li><a href="/home/{{user}}" class="active">HOME</a> 
+        </ul>
+    </div>
+
+
+
+<div id="loginTable" style="text-align: center; padding-top: 15%; padding-bottom: 13%;">
+    <h1>Payment Successful</h1>
+</div>
+
+
+
+
+<!--footer-->
+
+<div class="footer">
+    <table>
+      <tr>
+        <th><a href="/home/{{user}}" class="footerLinks">Home</a></th>
+        <th><a href="/about/{{user}}" class="footerLinks">About Us</a></th>
+      </tr>
+    </table>
+  </div>
+
+
+
+</body>
+</html>

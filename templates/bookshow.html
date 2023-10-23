@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <title>Movie On Click</title>
+    <link rel="stylesheet" type="text/css" href="/static/myStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="js/jsFile.js"></script>
+
+  </head>
+  <body id="paymentBody">
+    <div class="container">
+
+    <div>
+      <ul class="Navbar">
+        <li class="logo"><a id="logoText" href="/home/{{user}}">Book<span class="logoColr2">My</span>Movie </a></li>
+        <li class="logo"><input type="text" id="search" placeholder="Search for Movies and Events"></li>
+        <li><a href="/logout">LOG OUT</a></li> 
+        <li><a href="/login" >LOG IN</a></li> 
+        <li><a href="/contact/{{user}}">CONTACT</a> </li>
+        <li><a href="/about/{{user}}">ABOUT US</a> </li>
+        <li><a href="/home/{{user}}" class="active">HOME</a> 
+    </ul>
+    </div>
+
+    <div>
+      <ul id="secondaryNavbar">
+        <li class="secondaryNavbar">
+          <a id="logoText" href="/movies/{{user}}">Movies</a>
+        </li>
+        <li class="secondaryNavbar">
+          <a id="logoText" href="/events/{{user}}">Events</a>
+        </li>
+        <li class="secondaryNavbar">
+          <a id="logoText" href="/food/{{user}}">Food & Drink</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="paymentContainer">
+      <table id="paymentTable">
+        <tr>
+          <td class="paymentTd">
+
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jawan-et00330424-1693892482.jpg" width="317px" height="470">
+            <img src="https://th.bing.com/th/id/OIP.9O9o5MuPXghnTKIq8RbQXAHaJ4?pid=ImgDet&rs=1" width="317px" height="470"> 
+          </td>
+          <td class="paymentTd1">
+            <h2 id="paymentHead" style="text-align: center;">Jawan</h2>
+            <p style="text-align: center;">
+                7 Sep, 2023 <span class="paymentSpan">Length: </span> 2h 49m
+            </p>
+            <br />
+            <span class="paymentSpan" style="padding: 40%;">Action, Thriller</span><br />
+            <br />
+            <p style="text-align: center;">IMDb: 8.4/10</p>
+
+            <br/>
+            <br/>
+            <button class="paymentInput2">
+              <a href="https://www.youtube.com/watch?v=COv52Qyctws" style="text-decoration: none; color: aliceblue;">Watch Trailer</a>
+            </button>
+            <button class="paymentInput2">
+              <a href="#showtimes" style="text-decoration: none; color: aliceblue;">Book Tickets</a>
+            </button>
+            
+          </td>
+        </tr>
+      </table>
+
+      <br/>
+
+      <div class="about3">
+        <h1>Synopsis</h1>
+      </div>
+
+      <div class="about3">
+        <p style="text-align: justify;">
+            Driven by a desire to rectify societal wrongs, Vikram embarks on a mission to obliterate Kalee and presents the government with a set of demands, setting the stage for an electrifying and high-stakes showdown. The film delivers a strong social message about issues like the corrupt political system, challenges faced by farmers, and flaws in the healthcare system. It emphasizes the power of the index finger during elections as a means for citizens to actively participate in shaping the destiny of their country.
+        </p>
+      </div>
+
+      <div class="about3">
+        <h1>Cast</h1>
+      </div>
+
+      <div class="about3">
+       
+            <p>
+            Shah Rukh Khan <br>
+            Nayanthara<br>
+            Vijay Sethupathi<br>
+            Deepika Padukone<br>
+            Priyamani<br>
+            Sanya Malhotra<br>
+            Sunil Grover<br>
+            Riddhi Dogra
+        
+        </p>
+
+      </div>
+
+      <div class="about3">
+        <h1>Directors</h1>
+      </div>
+
+      <div class="about3">
+        <p>Atlee (Arun Kumar)</p>
+      </div>
+
+      <div class="about3">
+        <h1>Producers</h1>
+      </div>
+
+      <div class="about3">
+        <p>
+            Gauri Khan<br>
+            Gaurav Verma
+        </p>
+      </div>
+
+      <div class="about3">
+        <h1>Written By</h1>
+      </div>
+
+      <div class="about3">
+        <p>
+            Atlee (Arun Kumar)
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="about3" id="showtimes">
+        <h1 style="text-align: center;">Check out showtimes for this movie!</h1>
+      </div>
+      <br>
+      <br>
+
+
+      <form method="POST" class="about3">
+        <span style="padding: 7%;">
+          Date:<input
+            type="date"
+            class="paymentInput"
+            required/>
+          Cinema:
+          <select class="paymentInput">
+            <option>Cinepolis</option>
+            <option>INOX</option>
+            <option>AMB cinemas</option>
+            <option>PVR Cinemas</option>
+          </select>
+        
+        Time:
+        <select class="paymentInput">
+          <option>2:00pm</option>
+          <option>4:00pm</option>
+          <option>6:30pm</option>
+          <option>9:30pm</option>
+        </select>
+      </span>
+
+        <br/>
+        <br/>
+        <br/>
+        <div style="padding-left: 10%; padding-right: 10%;">
+          
+            <button type="submit" class="paymentInput2"><a href="/theater/{{user}}" style="text-decoration: none; color: aliceblue;">Book Seats</a></button>
+        </div>
+       <br>
+      </form>
+        </div>
+      </div>
+    </div>
+    <br>
+
+  </div>
+    <div class="footer">
+
+      <table>
+        <tr>
+          <th><a href="/home/{{user}}" class="footerLinks">Home</a></th>
+          <th><a href="#search" class="footerLinks">Search</a></th>
+          <th><a href="/about/{{user}}" class="footerLinks">About Us</a></th>
+        </tr>
+
+      </table>
+
+    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Movie On Click</title>
+    <link rel="stylesheet" type="text/css" href="/static/myStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="js/jsFile.js"></script>
+  </head>
+  <body>
+    <div class="aboutus">
+      <!--navbar-->
+      <div>
+        <ul class="Navbar">
+            <li class="logo"><a id="logoText" href="/home/{{user}}">Book<span class="logoColr2">My</span>Movie </a></li>
+            <li class="logo"><input type="text" id="search" placeholder="Search for Movies and Events"></li>
+            <li><a href="/logout">LOG OUT</a></li> 
+            <li><a href="/login" >LOG IN</a></li> 
+            <li><a href="/contact/{{user}}">CONTACT</a> </li>
+            <li><a href="/home/{{user}}" class="active">HOME</a> 
+        </ul>
+    </div>
+
+      <div class="about3" style="padding-top: 10%">
+        <h1>About Us</h1>
+      </div>
+
+      <div class="about3">
+        <p>
+          Movie On Click is an online Application where you can book tickets
+          sitting at your home. All you need is a working Internet Connection.
+          Book movie tickets, events, and even host your own shows with tickets.
+        </p>
+      </div>
+
+      
+   
+    </div>
+<!--footer-->
+
+    <div class="footer">
+        <table>
+          <tr>
+            <th><a href="/home/{{user}}" class="footerLinks">Home</a></th>
+            <th><a href="#search" class="footerLinks">Search</a></th>
+          </tr>
+        </table>
+      </div>
+
+  </body>
+</html>

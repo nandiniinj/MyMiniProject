@@ -1,0 +1,63 @@
+<html>
+<head>    
+    <title>Book My Show</title>
+        <link rel="stylesheet" type="text/css" href="/static/myStyle.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jsFile.js"></script>
+        <script language="javascript">
+            function lossUnsaved(){
+                            window.addEventListener("beforeunload", function (e) {
+                    var confirmationMessage = 'It looks like you have been editing something. '
+                                            + 'If you leave before saving, your changes will be lost.';
+
+                    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+                    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+                });
+            }
+        </script>
+        
+</head>
+<body>
+    <div>
+        <ul class="Navbar">
+            <li class="logo"><a id="logoText" href="">Book<span class="logoColr2">My</span>Movie </a></li>
+        </ul>
+    </div>
+
+<!--Form-->
+<table id="loginTable">
+    <tr>
+        <td class="loginTd" style="padding-top: 2%;">
+            <h1>Customer Login</h1>
+
+           
+
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="flashes">
+                {% for message in messages %}
+                <p style="color: red;">{{ message }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endwith %}
+
+            <form action="/login_check" method='POST'>
+                   
+                <input class="textLogin" type="email" name="email" placeholder="Email Address" required>
+                    
+                <br>
+                <input class="textLogin" type="password" name="password" placeholder="Password" required>
+                <br>
+                
+                <a href="/movies/{{user}}" style="text-decoration: none; color: aliceblue;"><Button value="movies.html" type="submit" class="buttonLogin">SIGN IN</Button></a>
+                    <Button type=" submit" class="buttonLogin"><a href="/signup" style="text-decoration: none; color: aliceblue;">JOIN NOW!</a></Button>
+            </form>
+        </td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>

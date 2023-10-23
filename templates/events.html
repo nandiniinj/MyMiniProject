@@ -1,0 +1,139 @@
+<html>
+<head>    
+    <title>Book My Show</title>
+        <link rel="stylesheet" type="text/css" href="/static/myStyle.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jsFile.js"></script>
+
+        
+</head>
+<body id="foodBody">
+    
+    <!--Navbar-->
+
+    <div>
+        <ul class="Navbar">
+            <li class="logo"><a id="logoText" href="/home/{{user}}">Book<span class="logoColr2">My</span>Movie </a></li>
+            <li class="logo"><input type="text" id="search" placeholder="Search for Movies and Events"></li>
+            <li><a href="/logout">LOG OUT</a></li> 
+            <li><a href="/login" >LOG IN</a></li> 
+            <li><a href="/contact/{{user}}">CONTACT</a> </li>
+            <li><a href="/about/{{user}}">ABOUT US</a> </li>
+            <li><a href="/home/{{user}}" class="active">HOME</a> 
+        </ul>
+    </div>
+
+    <div>
+        <ul id="secondaryNavbar">
+            <li class="secondaryNavbar"><a id="logoText" href="/movies/{{user}}"  >Movies</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="/food/{{user}}" >Food & Drink</a></li>
+        </ul>
+</div>
+
+
+
+<div id="foodContainer">
+    <table id="foodTable">
+    <tr>
+        <td colspan="2" id="foodHead"><h2>Events</h2></td>
+    </tr>
+</table>  
+
+
+<table id="moviesTable">
+    <tr class="moviesTr">
+        
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00370685-hhkgkgagzw-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA0IE5vdg%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00369364-nazpghxksg-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367968-vhcvtcbxdj-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAxNyBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00371562-admjbpemfh-portrait.jpg" width="100%"></a>
+        </td>
+        
+    </tr>
+
+    <tr>
+        
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Vijay Yadav & Friends: A Standup Comedy Show</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">"Heeriye" India Tour - Jasleen Royal</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Kisi Ko Batana Mat By Anubhav Singh Bassi</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Shri Ram</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAzIERlYw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00369835-zllmrywutj-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyMCBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00145294-vhpyafguac-portrait.jpg" width="100%"></a>
+        </td>
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCA3IERlYw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00371473-xzkhzxwcna-portrait.jpg" width="100%"></a>
+        </td>
+        
+        <td class="moviesTd">
+            <a href="/bookshow/{{user}}" class="moviesLinkList"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00372154-qrfeafgksp-portrait.jpg" width="100%"></a>
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">KING New Life India Tour By TI LIVE</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Jo Bolta Hai Wohi Hota Hai feat Harsh Gujral</a>
+        </td>
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Sunburn Arena Ft. Black Coffee (Hyderabad)</a>
+        </td>
+        
+        <td class="moviesTdText">
+            <a href="/bookshow/{{user}}" class="moviesLinkList">Sunday Soul Sante | Hyderabad</a>
+        </td>
+    </tr>
+
+</table>
+
+<table id="foodTable">
+    <tr>
+        <td colspan="2" id="foodHead">
+            <button class="active" >1</button>&nbsp;&nbsp;&nbsp;
+            <button class="moviesButton">2</button>&nbsp;&nbsp;&nbsp;
+            <button class="moviesButton">3</button>&nbsp;&nbsp;&nbsp;
+            
+        </td>
+    </tr>
+</table>  
+</div>
+
+<!--footer-->
+
+<div class="footer">
+    <table>
+      <tr>
+        <th><a href="/home/{{user}}" class="footerLinks">Home</a></th>
+        <th><a href="#search" class="footerLinks">Search</a></th>
+        <th><a href="/about/{{user}}" class="footerLinks">About Us</a></th>
+      </tr>
+    </table>
+  </div>
+
+
+
+</body>
+</html>
